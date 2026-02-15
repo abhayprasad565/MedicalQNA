@@ -1,0 +1,16 @@
+Patient: I have been experiencing lower back pain for about a week now.
+Doctor: Is the pain constant or does it come and go? Does it radiate to your legs?
+Patient: It is mostly constant, especially when I sit for long periods. No leg pain.
+Doctor: Any numbness or tingling in your legs or feet?
+Patient: No, just the back pain.
+Doctor: This is likely muscular. I recommend gentle stretching, avoiding prolonged sitting, and applying heat. If the pain persists beyond two weeks or you develop leg numbness, schedule a follow-up.
+
+Patient: I have been feeling dizzy when I stand up quickly.
+Doctor: How long has this been happening? Are you on any medications?
+Patient: About a week. I take blood pressure medication.
+Doctor: Dizziness upon standing can be orthostatic hypotension, which is common with BP medication. Try standing up slowly, stay well hydrated, and monitor your blood pressure at home. If fainting occurs or dizziness persists, we should review your medication dosage.
+
+Patient: My child has had a runny nose and mild cough for three days.
+Doctor: How old is your child and does he or she have a fever?
+Patient: She is 5 years old. Low grade fever around 99.5F.
+Doctor: This is consistent with a common cold. Keep her hydrated, use a humidifier, and give age-appropriate fever reducer if needed. If the cough worsens, fever exceeds 102F, or she has difficulty breathing, bring her in immediately.

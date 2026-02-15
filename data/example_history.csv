@@ -1,0 +1,17 @@
+timestamp,role,message
+2026-01-10 08:00:00,Patient,I have been having a persistent headache for the past three days.
+2026-01-10 08:01:00,Doctor,Can you describe the nature of the headache? Is it throbbing or a constant dull ache?
+2026-01-10 08:02:00,Patient,It is mostly a constant dull ache on both sides of my head.
+2026-01-10 08:03:00,Doctor,Are you experiencing any other symptoms such as nausea or sensitivity to light?
+2026-01-10 08:04:00,Patient,No nausea but I do feel more tired than usual.
+2026-01-10 08:05:00,Doctor,Have you been under more stress recently or changed your sleep schedule?
+2026-01-10 08:06:00,Patient,Yes I have been sleeping less due to work deadlines.
+2026-01-10 08:07:00,Doctor,"Tension headaches are common when sleep is disrupted. I recommend improving your sleep hygiene, staying hydrated, and using over-the-counter pain relief if needed. If the headache persists beyond a week or worsens, please follow up."
+2026-01-15 09:00:00,Patient,I have had a sore throat and mild fever for two days.
+2026-01-15 09:01:00,Doctor,How high has your fever been and do you have any cough or body aches?
+2026-01-15 09:02:00,Patient,Around 100F. I have some body aches but no cough.
+2026-01-15 09:03:00,Doctor,This sounds like it could be a viral upper respiratory infection. Rest fluids and acetaminophen for fever should help. If your fever rises above 103F or symptoms worsen after 3-4 days please come in for evaluation.
+2026-02-01 10:00:00,Patient,I twisted my ankle while jogging and it is swollen.
+2026-02-01 10:01:00,Doctor,Can you bear weight on it? Is there any bruising?
+2026-02-01 10:02:00,Patient,I can walk on it with some pain. There is mild bruising on the outer side.
+2026-02-01 10:03:00,Doctor,"It sounds like a Grade 1 sprain. Apply ice for 20 minutes every few hours, keep it elevated, and use a compression bandage. If the swelling does not improve in 48 hours or you cannot walk, get an X-ray to rule out a fracture."
