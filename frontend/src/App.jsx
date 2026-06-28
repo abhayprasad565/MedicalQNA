@@ -1,5 +1,6 @@
 import React from 'react';
 import ChatWindow from './ChatWindow';
+import { ThemeProvider } from './theme/ThemeProvider';
 
 const bannerStyle = {
   background: '#fff3cd',
@@ -35,16 +36,18 @@ const appContainer = {
 
 export default function App() {
   return (
-    <div style={appContainer}>
-      <h2 style={headerStyle}>🩺 Medical QNA Chatbot</h2>
+    <ThemeProvider>
+      <div style={appContainer}>
+        <h2 style={headerStyle}>🩺 Medical QNA Chatbot</h2>
 
-      <div style={bannerStyle}>
-        ⚠️ This chatbot is for <strong>educational purposes only</strong> and is
-        not a substitute for professional medical advice, diagnosis, or
-        treatment.
+        <div style={bannerStyle}>
+          ⚠️ This chatbot is for <strong>educational purposes only</strong> and is
+          not a substitute for professional medical advice, diagnosis, or
+          treatment.
+        </div>
+
+        <ChatWindow />
       </div>
-
-      <ChatWindow />
-    </div>
+    </ThemeProvider>
   );
 }
