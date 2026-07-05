@@ -1,42 +1,41 @@
 import React from 'react';
+import AppHeader from './components/AppHeader';
 import ChatWindow from './ChatWindow';
+import { ThemeProvider, useTheme } from './context/ThemeContext';
+import { getThemeStyles } from './styles/theme';
 
-const bannerStyle = {
-  background: '#fff3cd',
-  color: '#856404',
-  border: '1px solid #ffc107',
-  borderRadius: 8,
-  padding: '10px 16px',
-  margin: '16px 16px 0',
-  maxWidth: 780,
-  marginLeft: 'auto',
-  marginRight: 'auto',
-  fontSize: 14,
-  fontWeight: 500,
-  textAlign: 'center',
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif',
-};
+const AppContent = () => {
+  const { isDarkMode } = useTheme();
+  const theme = getThemeStyles(isDarkMode);
 
-const headerStyle = {
-  textAlign: 'center',
-  padding: '20px 0 0',
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif',
-  color: '#1a1a1a',
-};
+  const bannerStyle = {
+    background: theme.bannerBackground,
+    color: theme.bannerColor,
+    border: '1px solid #ffc107',
+    borderRadius: 8,
+    padding: '10px 16px',
+    margin: '16px 16px 0',
+    maxWidth: 780,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    fontSize: 14,
+    fontWeight: 500,
+    textAlign: 'center',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif',
+  };
 
-const appContainer = {
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100vh',
-  background: '#fafafa',
-};
+  const appContainer = {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100vh',
+    background: theme.backgroundColor,
+    color: theme.color,
+  };
 
-export default function App() {
   return (
-    <div style={appContainer}>
-      <h2 style={headerStyle}>🩺 Medical QNA Chatbot</h2>
+    <div style={appContainer} className={isDarkMode ? 'dark-mode' : 'light-mode'}>
+      <AppHeader />
 
       <div style={bannerStyle}>
         ⚠️ This chatbot is for <strong>educational purposes only</strong> and is
@@ -46,5 +45,13 @@ export default function App() {
 
       <ChatWindow />
     </div>
+  );
+};
+
+export default function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   );
 }
