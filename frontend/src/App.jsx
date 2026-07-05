@@ -1,5 +1,7 @@
 import React from 'react';
 import ChatWindow from './ChatWindow';
+import AppHeader from './components/AppHeader';
+import GlobalStyle from './components/GlobalStyles';
 
 const bannerStyle = {
   background: '#fff3cd',
@@ -18,14 +20,6 @@ const bannerStyle = {
     '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif',
 };
 
-const headerStyle = {
-  textAlign: 'center',
-  padding: '20px 0 0',
-  fontFamily:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif',
-  color: '#1a1a1a',
-};
-
 const appContainer = {
   display: 'flex',
   flexDirection: 'column',
@@ -36,7 +30,8 @@ const appContainer = {
 export default function App() {
   return (
     <div style={appContainer}>
-      <h2 style={headerStyle}>🩺 Medical QNA Chatbot</h2>
+      <GlobalStyle />
+      <AppHeader />
 
       <div style={bannerStyle}>
         ⚠️ This chatbot is for <strong>educational purposes only</strong> and is
